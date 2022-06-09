@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Webtalk v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat May 28 14:13:15 2022
+# Process ID: 3232
+# Current directory: C:/LABUPROG/WEL21ET1N4/PG_74163/PG_74163/PG_74163.sim/sim_counter/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/LABUPROG/WEL21ET1N4/PG_74163/PG_74163/PG_74163.sim/sim_counter/behav/xsim/xsim.dir/counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/LABUPROG/WEL21ET1N4/PG_74163/PG_74163/PG_74163.sim/sim_counter/behav/xsim/webtalk.log
+# Journal file: C:/LABUPROG/WEL21ET1N4/PG_74163/PG_74163/PG_74163.sim/sim_counter/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/LABUPROG/WEL21ET1N4/PG_74163/PG_74163/PG_74163.sim/sim_counter/behav/xsim/xsim.dir/counter_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/LABUPROG/WEL21ET1N4/PG_74163/PG_74163/PG_74163.sim/sim_counter/behav/xsim/xsim.dir/counter_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat May 28 14:13:19 2022. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat May 28 14:13:19 2022...
