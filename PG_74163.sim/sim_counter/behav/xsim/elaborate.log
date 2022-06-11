@@ -12,6 +12,7 @@ Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
 Compiling architecture behavioral of entity xil_defaultlib.flip_flop [flip_flop_default]
+Compiling architecture behavioral of entity xil_defaultlib.pre_flip_flop [pre_flip_flop_default]
 Compiling architecture behavioral of entity xil_defaultlib.counter_4_bit [counter_4_bit_default]
 Compiling architecture behavioral of entity xil_defaultlib.counter_tb
 Built simulation snapshot counter_tb_behav

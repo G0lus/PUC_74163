@@ -59,10 +59,10 @@ uut: flip_flop port map(
 
 clock: process
 begin
-    s_clk <= '0';
     wait for 5 ns;
     s_clk <= '1';
     wait for 5 ns;
+    s_clk <= '0';
 end process;
 
 -- simulation 
