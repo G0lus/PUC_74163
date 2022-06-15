@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Jun 12 09:04:54 2022
+# Process ID: 11020
+# Current directory: C:/LABUPROG/WEL21ET1N4/pg_74163_2/pg_74163_2.runs/impl_1
+# Command line: vivado.exe -log counter_4_bit.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source counter_4_bit.tcl -notrace
+# Log file: C:/LABUPROG/WEL21ET1N4/pg_74163_2/pg_74163_2.runs/impl_1/counter_4_bit.vdi
+# Journal file: C:/LABUPROG/WEL21ET1N4/pg_74163_2/pg_74163_2.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source counter_4_bit.tcl -notrace

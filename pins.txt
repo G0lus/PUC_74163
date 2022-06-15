@@ -1,0 +1,14 @@
+Data(0)		W16
+Data(1)		W17
+Data(2)		W15
+Data(3)		V15
+Q(0)		V19
+Q(1)		U19
+Q(2)		E19
+Q(3)		U16
+CLK		U18 (btn)
+EN_P		V16
+EN_T		V17
+N_CLR		R2
+N_LOAD		T1
+RCO		W18
