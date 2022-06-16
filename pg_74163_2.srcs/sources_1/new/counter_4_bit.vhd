@@ -1,24 +1,3 @@
-----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
--- 
--- Create Date: 28.05.2022 12:47:33
--- Design Name: 
--- Module Name: 4_bit_counter - Behavioral
--- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
--- 
-----------------------------------------------------------------------------------
-
-
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.std_logic_arith.all;
@@ -40,25 +19,26 @@ architecture Behavioral of counter_4_bit is
 
 
 signal s_q      : std_logic_vector(3 downto 0);  
+signal prev_s_q : std_logic_vector(3 downto 0);
 begin
 
---RCO <= '1' when (s_q = "1111" and EN_T = '1') else '0';
-RCO <= '1' when s_q = "0000" else '0';
+RCO <= '1' when prev_s_q = "1111" and s_q = "0000" and N_CLR ='1' else '0';
 
 process(CLK)
 begin
     if rising_edge(CLK) then
-            if N_CLR = '0' then
-                s_q <= "0000";
+        prev_s_q <= s_q;
+        if N_CLR = '0' then
+            s_q <= "0000";
+            prev_s_q <= "0000";
+        elsif N_LOAD = '0' then
+            s_q <= DATA;
             
-            elsif N_LOAD = '0' then
-                s_q <= DATA;
-                
-            elsif (EN_P = '1') and (EN_T = '1') then            
-                s_q <= s_q + 1;
-            end if;
-            
-            Q <= s_q;
+        elsif (EN_P = '1') and (EN_T = '1') then            
+            s_q <= s_q + 1;
+        end if;
+        
+        Q <= s_q;
 
     end if;         
 end process;

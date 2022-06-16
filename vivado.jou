@@ -1,0 +1,67 @@
+#-----------------------------------------------------------
+# Vivado v2022.1 (64-bit)
+# SW Build 3526262 on Mon Apr 18 15:48:16 MDT 2022
+# IP Build 3524634 on Mon Apr 18 20:55:01 MDT 2022
+# Start of session at: Wed Jun 15 18:15:37 2022
+# Process ID: 4812
+# Current directory: D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1040 D:\Patryk\Dokumenty\OneDrive - Wojskowa Akademia Techniczna\PUC\PG_74163\pg_74163_2.xpr
+# Log file: D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/vivado.log
+# Journal file: D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163\vivado.jou
+# Running On: DESKTOP-0VKIBAF, OS: Windows, CPU Frequency: 2592 MHz, CPU Physical cores: 4, Host memory: 8409 MB
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.xpr}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_counter
+launch_simulation -simset [get_filesets sim_counter ]
+source counter_4_bit.tcl
+close_sim
+file mkdir D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new
+file mkdir D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new
+file mkdir D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new
+file mkdir D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new
+file mkdir D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new
+set_property SOURCE_SET sources_1 [get_filesets sim_counter]
+file mkdir D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new
+file mkdir {D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new}
+close [ open {D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new/counter_tb.vhd} w ]
+add_files -fileset sim_counter {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new/counter_tb.vhd}}
+update_compile_order -fileset sim_counter
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top counter_tb [get_filesets sim_counter]
+set_property top_lib xil_defaultlib [get_filesets sim_counter]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_counter
+export_ip_user_files -of_objects  [get_files {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/pg_74163/PG_74163.srcs/sim_1/new/counter_tb.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_counter {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/pg_74163/PG_74163.srcs/sim_1/new/counter_tb.vhd}}
+export_ip_user_files -of_objects  [get_files {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/pg_74163/counter_tb_behav.wcfg}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_counter {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/pg_74163/counter_tb_behav.wcfg}}
+set_property SOURCE_SET sources_1 [get_filesets sim_counter]
+add_files -fileset sim_counter -norecurse {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_tb.vdb}}
+export_ip_user_files -of_objects  [get_files {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new/counter_tb.vhd}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_counter {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new/counter_tb.vhd}}
+set_property SOURCE_SET sources_1 [get_filesets sim_counter]
+add_files -fileset sim_counter -norecurse {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_4_bit.vdb}}
+export_ip_user_files -of_objects  [get_files {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_4_bit.vdb}}] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_tb.vdb}}] -no_script -reset -force -quiet
+remove_files  -fileset sim_counter {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_4_bit.vdb} {D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_tb.vdb}}
+set_property SOURCE_SET sources_1 [get_filesets sim_counter]
+add_files -fileset sim_counter -norecurse C:/Users/Patryk/Desktop/pg_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_4_bit.vdb
+export_ip_user_files -of_objects  [get_files C:/Users/Patryk/Desktop/pg_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_4_bit.vdb] -no_script -reset -force -quiet
+remove_files  -fileset sim_counter C:/Users/Patryk/Desktop/pg_74163/pg_74163_2.sim/sim_counter/behav/xsim/xsim.dir/xil_defaultlib/counter_4_bit.vdb
+set_property SOURCE_SET sources_1 [get_filesets sim_counter]
+close [ open {D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new/counter_4_bit_tb.vhd} w ]
+add_files -fileset sim_counter {{D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/pg_74163_2.srcs/sim_counter/new/counter_4_bit_tb.vhd}}
+update_compile_order -fileset sim_counter
+update_compile_order -fileset sim_counter
+launch_simulation -simset [get_filesets sim_counter ]
+launch_simulation -simset [get_filesets sim_counter ]
+source counter_4_bit_tb.tcl
+run 350 ns
+relaunch_sim
+relaunch_sim
+save_wave_config {D:/Patryk/Dokumenty/OneDrive - Wojskowa Akademia Techniczna/PUC/PG_74163/Techniczna/PUC/PG_74163/pg_74163_2.srcs/counter_4_bit_tb_behav.wcfg}
+close_sim
